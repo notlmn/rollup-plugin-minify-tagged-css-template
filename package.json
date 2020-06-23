@@ -1,0 +1,42 @@
+{
+  "name": "rollup-plugin-minify-tagged-css-template",
+  "version": "0.0.1",
+  "description": "Plugin to minify CSS content of tagged template string literals",
+  "homepage": "https://github.com/notlmn/rollup-plugin-minify-tagged-css-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notlmn/rollup-plugin-minify-tagged-css-template.git"
+  },
+  "main": "./cjs/index.js",
+  "scripts": {
+    "build": "npm run cjs",
+    "cjs": "ucjs esm cjs",
+    "lint": "xo rollup.config.js",
+    "test": "npm run lint && npm run build && rollup -c test/rollup.config.js"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "template string",
+    "template literal",
+    "tagged template string literal",
+    "css",
+    "minify"
+  ],
+  "author": "Laxman Damera",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.18.0",
+    "ucjs": "^0.1.1",
+    "xo": "^0.32.0"
+  },
+  "module": "./esm/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./esm/index.js",
+    "default": "./cjs/index.js"
+  },
+  "dependencies": {
+    "rollup-plugin-transform-tagged-template": "0.0.1"
+  }
+}
