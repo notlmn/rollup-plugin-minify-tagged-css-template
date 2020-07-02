@@ -47,6 +47,10 @@ const result = handleCSS`
 const result = handleCSS`:host{display:block;${decl}}`;
 ```
 
+## Related
+
+- [rollup-plugin-transform-tagged-template](https://github.com/notlmn/rollup-plugin-transform-tagged-template) - Apply transformations on contents of tagged template string literals.
+
 ## License
 
 [MIT](license) &copy; Laxman Damera
