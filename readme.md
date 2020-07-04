@@ -47,6 +47,34 @@ const result = handleCSS`
 const result = handleCSS`:host{display:block;${decl}}`;
 ```
 
+### `parserOptions: object`
+
+Config options to pass to the Babel parser.
+
+> Babel Parser options may be needed depending on how your project is structured. See [Babel parser options](https://babeljs.io/docs/en/babel-parser#options) for all available options.
+
+Example:
+
+``` js
+// rollup.js
+	// ...
+	plugins: [
+		transformTaggedTemplate({
+			parserOptions: {
+				sourceType: "module", // treat files as ES6 modules
+				plugins: [
+					"syntax-dynamic-import", // handle dynamic imports
+					[
+						"decorators", // use decorators proposal plugin
+						{ decoratorsBeforeExport: true }
+					]
+				]
+			}
+		})
+	],
+	// ...
+```
+
 ## Related
 
 - [rollup-plugin-transform-tagged-template](https://github.com/notlmn/rollup-plugin-transform-tagged-template) - Apply transformations on contents of tagged template string literals.

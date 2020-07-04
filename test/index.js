@@ -1,4 +1,4 @@
-function css() {}
+const css = require('plain-tag');
 
 const textColor = '#212121';
 const declaration = css`display: flex;`;
@@ -27,7 +27,7 @@ const x = css`
 ${otherStyles}
 `;
 
-const slectors = css`
+const selectors = css`
 * {}
 E {}
 E[foo] {}
@@ -73,4 +73,4 @@ E ~ F {}
 `;
 
 window.x = x;
-window.slectors = slectors;
+window.slectors = selectors;

@@ -26,9 +26,11 @@
   "author": "Laxman Damera",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^2.18.0",
+    "@babel/parser": "^7.10.4",
+    "plain-tag": "^0.1.0",
+    "rollup": "^2.18.2",
     "ucjs": "^0.1.1",
-    "xo": "^0.32.0"
+    "xo": "^0.32.1"
   },
   "module": "./esm/index.js",
   "type": "module",
@@ -37,6 +39,6 @@
     "default": "./cjs/index.js"
   },
   "dependencies": {
-    "rollup-plugin-transform-tagged-template": "0.0.1"
+    "rollup-plugin-transform-tagged-template": "^0.0.3"
   }
 }
