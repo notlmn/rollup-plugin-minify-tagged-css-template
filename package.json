@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-minify-tagged-css-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plugin to minify CSS content of tagged template string literals",
   "homepage": "https://github.com/notlmn/rollup-plugin-minify-tagged-css-template#readme",
   "repository": {
